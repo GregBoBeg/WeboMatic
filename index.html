@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="webomatic, web design, web apps, websites">
+    <meta name="author" content="Greg Ruiz">
+    <title>Webomatic Website Design | Welcome</title>
+    <link rel="stylesheet" href='./css/main.css'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="companyLogo">
+                <img src="./img/logo.png" class="companyLogo">
+                <h1 id="companyName"><span class="accent">Webo</span>Matic</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="accent" href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="heroSection">
+        <div class="container">
+            <h1>Cross-Platform Responsive Websites</h1>
+            <p>This ficticious webpage was built to practice basic html, css styling, and responsive-element-formatting across multiple platforms.</p>
+            <p>This page was manually written from scratch.  No templates or boilerplate html or css was used.</p>
+            <p><span class="accent">Instructions:</span>  While using a desktop browser, adjust the width of your browser window to see how elements collapse and re-align to properly fit within the window's width.</p>
+        </div>
+    </section>
+    <section id="subscribeSection">
+        <div class="container">
+            <h3>Join the Community</h3>
+            <form onsubmit="return submitSubscribe(subscribeEmail);">
+                <input type="email" name="subscribeEmail" placeholder="Enter Your Email">
+                <button type="submit" class="button01">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <section id="servicesSection">
+        <div>
+            <div class="serviceBox">
+                <img src="./img/logo.png" class="serviceIcon">
+                <h3>React/JavaScript</h3>
+                <p>Lorem, ipsum sit amet adipisicing elit. Cum, laudantium.</p>
+            </div>
+            <div class="serviceBox">
+                <img src="./img/logo.png" class="serviceIcon">
+                <h3>Python/Django</h3>
+                <p>Lorem ipsum amet consectetur adipisicing elit. Velit, consequatur adipisicing elit!</p>
+            </div>
+            <div class="serviceBox">
+                <img src="./img/logo.png" class="serviceIcon">
+                <h3>GIT > GitHub > AWS</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos autem possimus veritatis.</p>
+            </div>
+        </div>
+    </section>
+    <footer id="footerSection">
+        <p>Webomatic Incorporated | Copyright &copy; 2021</p>
+    </footer>
+    <script>
+        function submitSubscribe(subscribeEmail) {
+            if ( confirm("Since this is not a fully functional website, the Subscribe button triggers a JavaScript function to display this message.  This message simply captures and redisplays the email address entered: " + subscribeEmail.value) == false )
+            {
+                return false ;
+            } else {
+                return true ;
+            }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #333333;
+    line-height: 1.5em;
+    padding:0;
+    margin:0;
+    background-color: #f4f4f4;
+}
+
+h1{
+    color:#444444;
+    font-size: 28px;
+    padding-top:40px;
+    line-height: 1.2em;
+    
+}
+
+
+/* Global */
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+.button01{
+    height: 26px;
+    background:tomato;
+    border: none;
+}
+
+.accent{
+    color:yellowgreen;
+    font-weight: bold;
+}
+
+/* Header Section*/
+
+header{
+    background:#444444;
+    color: white;
+    padding-top: 20px;
+    min-height: 100px;
+    border-bottom: 5px #222222 solid
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul{
+    padding:0;
+    margin:0;
+}
+
+header li{
+    float:left;
+    display:inline;
+    padding: 0px 25px 0px 0px;
+}
+
+header #companyLogo{
+    float:left;
+    padding:0;
+    margin:0;
+}
+
+header .companyLogo{
+    padding:0;
+    margin:0;
+    width: 100px;
+}
+
+header #companyName{
+    font-size: 18px;
+    margin:0;
+    padding:0;
+    color:white;
+}
+
+header nav{
+    float:right;
+    margin-top:30px;
+}
+
+header li a{
+    padding: 0px;
+}
+
+header li a:hover{
+    color:yellow;
+    padding: 0px;
+    background-color: tomato;
+}
+
+/* heroSection */
+
+#heroSection{
+    min-height:150px;
+    background:url('../img/heroBackground.jpg');
+    padding-bottom:40px;
+}
+
+#heroSection h1{
+    color:#444444;
+    font-size: 28px;
+    padding-top:40px;
+}
+
+/* subscribeSection */
+#subscribeSection{
+    min-height:20px;
+    padding: 0px 0px 0px 0px;
+    background: yellowgreen;
+}
+
+#subscribeSection h3{
+    float:left;
+    padding:0;
+    margin:10px 0px 10px 0px;
+}
+
+#subscribeSection form{
+    float:right;
+    padding:0;
+    margin:10px 0px 10px 0px;
+}
+
+#subscribeSection input{
+    height: 20px;
+}
+
+/* servicesSection */
+
+#servicesSection{
+    text-align: center;
+    width:80%;
+    margin:20px auto 20px auto;
+}
+
+.serviceBox{
+    display: inline-block;
+    width:250px;
+    margin:10px 30px 10px 30px;
+    vertical-align: top;
+}
+
+.serviceBox img{
+    width: 100px;
+    text-align:center;
+    padding:0;
+    margin:0;
+}
+
+.serviceBox h3{
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+
+.serviceBox p{
+    text-align:left;
+    padding:0;
+    margin:0;
+}
+
+/* Footer Section */
+
+#footerSection{
+    margin:0px;
+    padding:30px 0px 30px 0px;
+    background-color: #333333;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* Media Queries */
+
+    @media(max-width: 768px){
+        header #companyLogo,
+        header nav,
+        header nav li{
+            float:none;
+            text-align:center;
+            width:100%;
+        }
+        header{
+            padding-bottom:10px;
+        }
+        
+        #subscribeSection h3,
+        #subscribeSection form{
+            float:none;
+            text-align:center;
+        }
+    }
+
