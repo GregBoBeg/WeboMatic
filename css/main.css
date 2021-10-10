@@ -28,7 +28,13 @@ h1{
 .button01{
     height: 26px;
     background:tomato;
-    border: none;
+    border:solid tomato;
+}
+
+.button01:hover{
+    background-color: yellow;
+    border:solid tomato;
+    cursor:pointer;
 }
 
 .accent{
